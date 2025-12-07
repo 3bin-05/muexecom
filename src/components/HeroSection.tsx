@@ -81,16 +81,10 @@ const HeroSection = () => {
               style={{ animationDelay: "0.4s" }}
             >
               <button
-                onClick={scrollToContact}
+                onClick={scrollToPositions}
                 className="btn-primary text-lg px-8 py-4"
               >
                 Apply for Execom
-              </button>
-              <button
-                onClick={scrollToPositions}
-                className="btn-secondary text-lg px-8 py-4"
-              >
-                View Roles
               </button>
             </div>
 
