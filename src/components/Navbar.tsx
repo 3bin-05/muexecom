@@ -32,7 +32,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-white/90 backdrop-blur-xl border-b border-primary/20 shadow-lg"
+          ? "bg-background/90 backdrop-blur-xl border-b border-primary/20 shadow-lg"
           : "bg-transparent"
       }`}
     >
@@ -60,7 +60,7 @@ const Navbar = () => {
                   e.preventDefault();
                   scrollToSection(link.href);
                 }}
-                className="nav-link text-sm font-medium hover:text-primary"
+                className="nav-link text-sm font-medium"
               >
                 {link.name}
               </a>

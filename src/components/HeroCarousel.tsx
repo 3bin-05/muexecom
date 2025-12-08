@@ -50,7 +50,7 @@ const HeroCarousel = () => {
             <div className="w-16 h-16 rounded-2xl bg-primary/20 flex items-center justify-center mb-6 glow-border">
               <slide.icon className="w-8 h-8 text-primary" />
             </div>
-            <h3 className="text-xl font-bold text-black mb-3">{slide.title}</h3>
+            <h3 className="text-xl font-bold text-foreground mb-3">{slide.title}</h3>
             <p className="text-muted-foreground leading-relaxed">{slide.description}</p>
           </div>
         ))}

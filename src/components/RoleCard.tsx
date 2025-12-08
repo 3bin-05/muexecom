@@ -40,7 +40,7 @@ const RoleCard = ({ role, onClick }: RoleCardProps) => {
         </h3>
 
         {/* Description */}
-        <p className="text-sm text-white text-center mb-6 max-w-[200px] translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100">
+        <p className="text-sm text-muted-foreground text-center mb-6 max-w-[200px] translate-y-4 group-hover:translate-y-0 transition-transform duration-300 delay-100">
           {role.description}
         </p>
 
