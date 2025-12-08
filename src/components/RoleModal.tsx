@@ -46,7 +46,7 @@ const RoleModal = ({ role, isOpen, onClose }: RoleModalProps) => {
       onClick={onClose}
     >
       {/* Backdrop */}
-      <div className="absolute inset-0 bg-background/80 backdrop-blur-sm animate-fade-in" />
+      <div className="absolute inset-0 bg-white/80 backdrop-blur-sm animate-fade-in" />
 
       {/* Modal */}
       <div
@@ -63,14 +63,14 @@ const RoleModal = ({ role, isOpen, onClose }: RoleModalProps) => {
 
         {/* Header */}
         <div className="mb-6">
-          <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">
+          <h2 className="text-2xl sm:text-3xl font-bold text-black mb-2">
             {role.title}
           </h2>
           <div className="flex flex-wrap gap-2">
             {role.tags.map((tag, index) => (
               <span
                 key={index}
-                className="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-primary border border-primary/20"
+                className="px-3 py-1 text-xs font-medium rounded-full bg-primary/10 text-black border border-primary/20"
               >
                 {tag}
               </span>
@@ -79,13 +79,13 @@ const RoleModal = ({ role, isOpen, onClose }: RoleModalProps) => {
         </div>
 
         {/* Description */}
-        <p className="text-muted-foreground leading-relaxed mb-8">
+        <p className="text-black leading-relaxed mb-8">
           {role.fullDescription}
         </p>
 
         {/* Responsibilities */}
         <div className="mb-8">
-          <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
+          <h3 className="text-lg font-semibold text-black mb-4 flex items-center gap-2">
             <span className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center">
               <Check className="w-4 h-4 text-primary" />
             </span>
@@ -106,7 +106,7 @@ const RoleModal = ({ role, isOpen, onClose }: RoleModalProps) => {
 
         {/* Benefits */}
         <div className="mb-8">
-          <h3 className="text-lg font-semibold text-foreground mb-4 flex items-center gap-2">
+          <h3 className="text-lg font-semibold text-black mb-4 flex items-center gap-2">
             <span className="w-8 h-8 rounded-lg bg-accent/20 flex items-center justify-center">
               <Sparkles className="w-4 h-4 text-accent" />
             </span>

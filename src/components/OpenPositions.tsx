@@ -1,13 +1,16 @@
 import { useState } from "react";
 import RoleCard from "./RoleCard";
 import RoleModal from "./RoleModal";
-
+import coleadImg from "../../public/Campus Co-Lead.png";
+import contentImg from "../../public/Content Team.png";
+import creativeImg from "../../public/Creative Team.png";
+import designImg from "../../public/Design Lead.png";
+import hrImg from "../../public/HR Manager.png";
 const roles = [
   {
-    title: "Chairperson",
+    title: "CO-Lead",
     description: "Lead the executive committee and drive vision forward.",
-    image:
-      "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=600&fit=crop",
+    image: coleadImg,
     tags: ["Leadership", "Strategy", "Management"],
     fullDescription:
       "As Chairperson, you'll be the primary leader of our executive committee, responsible for setting the strategic direction and ensuring all departments work cohesively towards our shared goals. You'll represent the organization externally and inspire the team internally.",
@@ -26,10 +29,10 @@ const roles = [
     ],
   },
   {
-    title: "Technical Lead",
+    title: "Content Lead & Content Team",
     description: "Spearhead technical projects and drive innovation.",
     image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=600&fit=crop",
+      contentImg,
     tags: ["Tech", "Development", "Innovation"],
     fullDescription:
       "As Technical Lead, you'll oversee all technology-related initiatives, from website development to digital tools. You'll lead a team of talented developers and ensure our technical infrastructure supports the organization's goals.",
@@ -48,10 +51,9 @@ const roles = [
     ],
   },
   {
-    title: "Design Head",
+    title: "Creative Lead & Creative Team",
     description: "Shape our visual identity and creative direction.",
-    image:
-      "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=600&fit=crop",
+    image: creativeImg,
     tags: ["Design", "Creative", "Branding"],
     fullDescription:
       "As Design Head, you'll be the creative visionary behind our visual identity. From event materials to digital presence, you'll ensure consistency and excellence in all design outputs while leading a talented creative team.",
@@ -70,10 +72,10 @@ const roles = [
     ],
   },
   {
-    title: "Events Coordinator",
+    title: "Design Lead & Design Team",
     description: "Plan memorable events that unite the community.",
     image:
-      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=600&fit=crop",
+      designImg,
     tags: ["Events", "Planning", "Community"],
     fullDescription:
       "As Events Coordinator, you'll be responsible for bringing our community together through engaging and memorable events. From ideation to execution, you'll manage every aspect of event planning while working with various teams.",
@@ -92,10 +94,10 @@ const roles = [
     ],
   },
   {
-    title: "Content Lead",
+    title: "HR-Manager",
     description: "Craft compelling narratives across platforms.",
     image:
-      "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=600&h=600&fit=crop",
+      hrImg,
     tags: ["Content", "Writing", "Strategy"],
     fullDescription:
       "As Content Lead, you'll be the voice of our organization across all platforms. You'll develop content strategies, create engaging narratives, and ensure consistent messaging that resonates with our audience.",
