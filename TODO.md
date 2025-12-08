@@ -1,0 +1,2 @@
+- [x] Change background color of cards in AboutSection from grey to white by adding 'bg-white' class
+- [x] Change background color of email and phone cards in ContactSection from grey to white by adding 'bg-white' class
