@@ -57,10 +57,10 @@ const HeroSection = () => {
 
             {/* Heading */}
             <h1
-              className="text-4xl sm:text-5xl lg:text-6xl xl:text-6xl font-bold text-foreground leading-tight animate-fade-up"
+              className="text-4xl sm:text-5xl lg:text-5xl xl:text-5xl font-bold text-black leading-tight animate-fade-up"
               style={{ animationDelay: "0.2s" }}
             >
-              Join the <span className="gradient-text">Next Gen</span>
+              Join the <span className="gradient-text">μlearn SBC</span>
               <br />
               Execom
             </h1>

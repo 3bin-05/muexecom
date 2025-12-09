@@ -2,113 +2,295 @@ import { useState } from "react";
 import RoleCard from "./RoleCard";
 import RoleModal from "./RoleModal";
 
+const coleadImg = "/Campus Co-Lead.png";
+const contentImg = "/Content Team.png";
+const creativeImg = "/Creative Team.png";
+const designImg = "/Design Lead.png";
+const hrImg = "/HR Manager.png";
+const techImg = "/tech.png";
+const opImg = "/Operation.png";
+const marketImg = "/Market.png";
+const muvImg = "/Muv.png";
 const roles = [
   {
-    title: "Chairperson",
+    title: "CO-Lead",
     description: "Lead the executive committee and drive vision forward.",
-    image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=600&h=600&fit=crop",
-    tags: ["Leadership", "Strategy", "Management"],
-    fullDescription: "As Chairperson, you'll be the primary leader of our executive committee, responsible for setting the strategic direction and ensuring all departments work cohesively towards our shared goals. You'll represent the organization externally and inspire the team internally.",
+    image: coleadImg,
+    tags: [
+      "Leadership",
+      "Strategic Thinking ",
+      " Decision-Making Team Coordination ",
+      "Problem-Solving ",
+      "Responsibility ",
+    ],
+    fullDescription: (
+      <p>
+        The Co-Lead supports the Lead in guiding µLearn SBC’s direction and
+        ensuring smooth coordination across all teams. You help with planning,
+        decision-making, and monitoring progress so that all initiatives move
+        forward effectively. Your role ensures stability, clarity, and strategic
+        alignment within the community. <br />
+        Key Responsibilities <br />
+        Assist in planning strategies, events, and major initiatives. <br />
+        Coordinate between teams to maintain alignment. <br />
+        Monitor workflow progress and support timely execution. <br />
+        Identify challenges early and help implement solutions. <br />
+        Provide structured guidance and support to team leads. <br />
+      </p>
+    ),
+
     responsibilities: [
-      "Oversee all executive committee operations and initiatives",
-      "Develop and communicate the organization's strategic vision",
-      "Chair executive meetings and ensure effective decision-making",
-      "Build and maintain relationships with stakeholders and partners",
-      "Mentor and support other committee members",
-      "Represent the organization at official events and functions",
+      "Strategic Planning Support",
+      "Team Coordination",
+      "Progress Monitoring",
+      "Problem Identification & Resolution",
+      "Support to Team Leads",
+      "Facilitation of Communication",
+      "Event Oversight",
     ],
     benefits: [
-      "Develop exceptional leadership and management skills",
-      "Build a powerful professional network",
-      "Shape the future direction of the organization",
+      "Leadership Experience",
+      "Networking Opportunities",
+      "Strategic Thinking Skills",
     ],
   },
   {
-    title: "Technical Lead",
+    title: "Content Lead & Content Team",
     description: "Spearhead technical projects and drive innovation.",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=600&fit=crop",
-    tags: ["Tech", "Development", "Innovation"],
-    fullDescription: "As Technical Lead, you'll oversee all technology-related initiatives, from website development to digital tools. You'll lead a team of talented developers and ensure our technical infrastructure supports the organization's goals.",
+    image: contentImg,
+    tags: [
+      "Writing",
+      "Editing",
+      "Creativity",
+      "Clarity",
+      "Research",
+      "Understanding Tone ",
+      " Consistency ",
+      " Collaboration & Team Play ",
+    ],
+    fullDescription: (
+      <p>
+        Content Lead <br />
+        The Content Lead defines the voice, tone, and style of µLearn SBC. You
+        make sure communication is simple, engaging, and memorable. You turn
+        information into stories that people want to read. <br />
+        Content Team <br />
+        The Content Team crafts the voice of the community. It focuses on
+        writing clear, engaging, and relevant content for various platforms and
+        initiatives.
+      </p>
+    ),
     responsibilities: [
-      "Lead the development and maintenance of digital platforms",
-      "Manage and mentor the technical team members",
-      "Evaluate and implement new technologies and tools",
-      "Ensure security and reliability of all technical systems",
-      "Collaborate with other departments on tech requirements",
-      "Create technical documentation and guidelines",
+      "Voice & Tone Development",
+      "Content Creation & Editing",
+      "Collaboration with Other Teams",
+      "Audience Engagement",
+      "Content Strategy Implementation",
+      "Quality Assurance",
+      "Performance Analysis",
     ],
     benefits: [
-      "Gain hands-on experience leading technical projects",
-      "Work with cutting-edge technologies",
-      "Build a portfolio of impactful projects",
+      "Writing Skill Enhancement",
+      "Content Strategy Experience",
+      "Networking Opportunities",
     ],
   },
   {
-    title: "Design Head",
+    title: "Creative Lead & Creative Team",
     description: "Shape our visual identity and creative direction.",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600&h=600&fit=crop",
-    tags: ["Design", "Creative", "Branding"],
-    fullDescription: "As Design Head, you'll be the creative visionary behind our visual identity. From event materials to digital presence, you'll ensure consistency and excellence in all design outputs while leading a talented creative team.",
+    image: creativeImg,
+    tags: [
+      "Imagination",
+      "Visual Thinking",
+      "Concept Creation",
+      "Cross-team Collaboration",
+      "Experimentation",
+      "Idea Execution",
+    ],
+    fullDescription: (
+      <p>
+        Creative Lead <br />
+        The Creative Lead is the spark behind every concept. You bring
+        imagination into campaigns, events, and visuals - giving µLearn SBC its
+        unique personality. From brainstorming wild ideas to refining creative
+        strategies, you bring innovation everywhere. <br />
+        Creative Team <br />
+        The hands-on innovators. You work on creative concepts, designs,
+        experiences, and interactive elements that make µLearn SBC stand out on
+        campus.
+      </p>
+    ),
+
     responsibilities: [
-      "Develop and maintain the organization's visual brand identity",
-      "Lead the design team in creating compelling visual content",
-      "Oversee design for events, social media, and marketing materials",
-      "Establish design standards and guidelines",
-      "Collaborate with other teams to understand design needs",
-      "Stay updated on design trends and best practices",
+      "Concept Development",
+      "Creative Strategy",
+      "Collaboration with Other Teams",
+      "Trend Awareness",
+      "Quality Control",
+      "Experimentation and Innovation",
+      "Performance Analysis",
     ],
     benefits: [
-      "Build an impressive design portfolio",
-      "Lead creative projects from concept to execution",
-      "Develop your leadership and team management skills",
+      "Creative Confidence",
+      "Portfolio Development",
+      "Networking Opportunities",
     ],
   },
   {
-    title: "Events Coordinator",
+    title: "Design Lead & Design Team",
     description: "Plan memorable events that unite the community.",
-    image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=600&fit=crop",
-    tags: ["Events", "Planning", "Community"],
-    fullDescription: "As Events Coordinator, you'll be responsible for bringing our community together through engaging and memorable events. From ideation to execution, you'll manage every aspect of event planning while working with various teams.",
+    image: designImg,
+    tags: [
+      "Basic Design Knowledge (poster/Graphic)",
+      " Layout & Spacing Color Sense ",
+      " Visual Storytelling ",
+      " Creativity ",
+      " Attention to Detail ",
+    ],
+    fullDescription: (
+      <p>
+        Design Lead <br /> The Design Lead shapes the entire visual identity of
+        µLearn SBC. You define how the community looks, feels, and communicates
+        visually - from posters to branding to event themes. Your direction
+        makes µLearn instantly recognizable. <br />
+        Design Team <br />
+        The Design Team shapes the visual identity of the community. From
+        posters to digital creatives, this team ensures that every visual is
+        clear, attractive, and aligned with the brand.
+      </p>
+    ),
     responsibilities: [
-      "Plan and execute a diverse calendar of events",
-      "Manage event budgets and logistics",
-      "Coordinate with venues, vendors, and speakers",
-      "Lead the events team and delegate responsibilities",
-      "Ensure smooth execution on event days",
-      "Gather feedback and continuously improve event quality",
+      "Creative Direction",
+      "Visual Content Creation",
+      "Brand Consistency",
+      "Collaboration with Other Teams",
+      "Trend Awareness",
+      "Quality Control",
     ],
     benefits: [
-      "Master event management and logistics",
-      "Build strong organizational skills",
-      "Create memorable experiences for hundreds of participants",
+      "Portfolio Development",
+      "Creative Leadership Experience",
+      "Networking Opportunities",
     ],
   },
   {
-    title: "Content Lead",
+    title: "HR-Manager",
     description: "Craft compelling narratives across platforms.",
-    image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?w=600&h=600&fit=crop",
+    image: hrImg,
     tags: ["Content", "Writing", "Strategy"],
-    fullDescription: "As Content Lead, you'll be the voice of our organization across all platforms. You'll develop content strategies, create engaging narratives, and ensure consistent messaging that resonates with our audience.",
+    fullDescription: (
+      <p>
+        The HR Manager is responsible for maintaining a positive and
+        well-structured internal environment within µLearn SBC. You ensure that
+        members feel supported, communication remains smooth, and the team
+        operates harmoniously. Your role includes welcoming new members,
+        monitoring engagement, and addressing any concerns with professionalism
+        and discretion. <br />
+        Key Responsibilities
+        <br />
+        Oversee member onboarding and orientation. <br />
+        Maintain clear and consistent communication across teams. <br />
+        Address issues or conflicts and help maintain team harmony. <br />
+        Conduct check-ins and gather internal feedback. <br />
+        Support leads with team coordination and member well-being. <br />
+      </p>
+    ),
+
     responsibilities: [
-      "Develop and execute comprehensive content strategies",
-      "Create and edit content for all platforms and channels",
-      "Manage the content calendar and ensure timely delivery",
-      "Lead and mentor content team members",
-      "Analyze content performance and optimize strategies",
-      "Maintain brand voice consistency across all content",
+      "Member Onboarding & Orientation",
+      "Internal Communication",
+      "Conflict Resolution",
+      "Engagement Monitoring",
+      "Feedback Collection",
+      "Support to Team Leads",
+      "Team Well-being Maintenance",
+      "Performance Analysis",
+      "Event Oversight",
     ],
     benefits: [
-      "Sharpen your writing and storytelling skills",
-      "Learn content strategy and analytics",
-      "See your work reach and impact thousands",
+      "People Management Skills",
+      "Networking Opportunities",
+      "Leadership Experience",
+      "Event Oversight",
     ],
   },
   {
-    title: "PR & Outreach",
+    title: "Technical Lead & Technical Team",
     description: "Build partnerships and expand our influence.",
-    image: "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?w=600&h=600&fit=crop",
+    image: techImg,
+    tags: [
+      "Basic Tech Knowledge (Discord,  platforms) ",
+      "Problem-solving ",
+      "Quick Thinking ",
+      "Adaptability ",
+      "Willingness to Learn ",
+    ],
+    fullDescription: (
+      <p>
+        Technical Lead <br /> The Technical Lead is the tech backbone of µLearn
+        SBC. You handle technical workflows, tools, automation, and platforms -
+        ensuring everything runs smarter and more efficiently. From Discord
+        setups to automation tools, you keep things digital and smooth.
+        <br />
+        Technical Team <br />
+        The Technical Team supports all technology-related needs of the
+        community. It ensures that platforms, tools, and digital systems run
+        smoothly and are properly maintained.
+      </p>
+    ),
+    responsibilities: [
+      "Technical Infrastructure Management",
+      "Tool and Platform Setup",
+      "Automation Implementation",
+      "Technical Support",
+      "Collaboration with Other Teams",
+      "Continuous Improvement of Tech Processes",
+    ],
+    benefits: [
+      "Tech Skill Development",
+      "Hands-on Experience with Digital Tools",
+      "Networking Opportunities",
+    ],
+  },
+  {
+    title: "Marketing Lead & Marketing Team",
+    description: "Build partnerships and expand our influence.",
+    image: marketImg,
+    tags: ["Communication", "Networking", "Creativity", "Social Media Basics"],
+    fullDescription: (
+      <p>
+        Marketing Lead <br /> The Marketing Lead is the voice, face, and vibe of
+        µLearn SBC. You lead branding, visibility, campaigns, and community
+        growth - making sure people know, talk about, and engage with the
+        community. You build a presence that pulls students in effortlessly.{" "}
+        <br />
+        Marketing & Outreach Team <br />
+        The Marketing Team manages the visibility and reach of the community. It
+        is responsible for promoting events, engaging students, and maintaining
+        an active presence across communication channels.
+      </p>
+    ),
+    responsibilities: [
+      "Campaign Planning",
+      "Content Creation",
+      "Social Media Management",
+      "Community Engagement",
+      "Brand Development",
+      "Performance Analysis",
+    ],
+    benefits: [
+      "Social Media Handling",
+      "Creative Skill Development",
+      "Networking Opportunities",
+    ],
+  },
+  {
+    title: "Muv Lead & Muv Team",
+    description: "Build partnerships and expand our influence.",
+    image: muvImg,
     tags: ["PR", "Networking", "Partnerships"],
-    fullDescription: "As PR & Outreach lead, you'll be the bridge between our organization and the external world. You'll build strategic partnerships, manage media relations, and expand our influence within the industry.",
+    fullDescription:
+      "As PR & Outreach lead, you'll be the bridge between our organization and the external world. You'll build strategic partnerships, manage media relations, and expand our influence within the industry.",
     responsibilities: [
       "Develop and maintain relationships with partners and sponsors",
       "Manage media relations and press communications",
@@ -123,31 +305,75 @@ const roles = [
       "Open doors to future career opportunities",
     ],
   },
+  {
+    title: "Operations Lead & Operations Team",
+    description: "Build partnerships and expand our influence.",
+    image: opImg,
+    tags: [
+      "Management Skills",
+      "Event Coordination",
+      "Teamwork",
+      "Reliability",
+      "Discipline",
+      "Communication",
+    ],
+    fullDescription: (
+      <p>
+        Operations Lead <br /> The Operations Lead is the backbone of µLearn
+        SBC. You’re the one who makes sure ideas don’t just stay as ideas - they
+        turn into reality. From planning timelines to coordinating people and
+        making events run without chaos, you ensure everything moves like a
+        well-oiled machine. Smooth execution is your signature.
+        <br />
+        Operations Team <br />
+        The Operations Team ensures that every plan is executed efficiently and
+        every event runs smoothly. This team focuses on coordination, on-ground
+        management, and maintaining order during activities and initiatives.
+      </p>
+    ),
+
+    responsibilities: [
+      "Strategic Planning",
+      "Event Execution",
+      "Quality Assurance",
+      "Team Coordination",
+      "Resource Management",
+      "Problem Solving",
+    ],
+    benefits: [
+      "Operational Experience",
+      "Leadership Development",
+      "Networking Opportunities",
+    ],
+  },
 ];
 
 const OpenPositions = () => {
-  const [selectedRole, setSelectedRole] = useState<typeof roles[0] | null>(null);
+  const [selectedRole, setSelectedRole] = useState<(typeof roles)[0] | null>(
+    null
+  );
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const handleCardClick = (role: typeof roles[0]) => {
+  const handleCardClick = (role: (typeof roles)[0]) => {
     setSelectedRole(role);
     setIsModalOpen(true);
   };
 
   return (
-    <section id="positions" className="relative py-20 lg:py-20">
+    <section id="positions" className="relative py-20 lg:py-20 bg-blue-50">
       {/* Background accent */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-black mb-4">
             Open Positions
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full mb-6 shadow-lg shadow-primary/50" />
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Pick a role that matches your skills and passion. Each position offers unique growth opportunities.
+            Pick a role that matches your skills and passion. Each position
+            offers unique growth opportunities.
           </p>
         </div>
 

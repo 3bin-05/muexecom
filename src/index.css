@@ -6,48 +6,48 @@
 
 @layer base {
   :root {
-    --background: 260 60% 3%;
-    --foreground: 0 0% 95%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
 
-    --card: 260 50% 6%;
-    --card-foreground: 0 0% 95%;
+    --card: 0 0% 98%;
+    --card-foreground: 0 0% 0%;
 
-    --popover: 260 50% 5%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 0 0% 97%;
+    --popover-foreground: 0 0% 0%;
 
-    --primary: 262 83% 58%;
+    --primary: 210 100% 50%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 260 40% 12%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 210 20% 90%;
+    --secondary-foreground: 0 0% 0%;
 
-    --muted: 260 30% 15%;
-    --muted-foreground: 260 10% 60%;
+    --muted: 210 10% 85%;
+    --muted-foreground: 0 0% 0%;
 
-    --accent: 270 91% 65%;
+    --accent: 210 100% 70%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 260 30% 18%;
-    --input: 260 30% 12%;
-    --ring: 262 83% 58%;
+    --border: 210 10% 80%;
+    --input: 0 0% 95%;
+    --ring: 210 100% 50%;
 
     --radius: 1rem;
 
     /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(262 83% 58%) 0%, hsl(270 91% 65%) 50%, hsl(280 80% 60%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(260 60% 3%) 0%, hsl(260 50% 8%) 50%, hsl(270 40% 12%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(260 50% 8%) 0%, hsl(260 50% 5%) 100%);
-    
-    --glow-purple: 0 0 40px hsl(262 83% 58% / 0.4);
-    --glow-purple-intense: 0 0 60px hsl(262 83% 58% / 0.6);
-    --glow-subtle: 0 0 20px hsl(262 83% 58% / 0.2);
-    
-    --glass-bg: hsl(260 50% 8% / 0.6);
-    --glass-border: hsl(262 83% 58% / 0.2);
-    
+    --gradient-primary: linear-gradient(135deg, hsl(210 100% 50%) 0%, hsl(210 100% 70%) 50%, hsl(200 100% 60%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(210 100% 95%) 0%, hsl(210 100% 90%) 50%, hsl(200 100% 85%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(210 20% 95%) 0%, hsl(210 20% 97%) 100%);
+
+    --glow-blue: 0 0 40px hsl(210 100% 50% / 0.4);
+    --glow-blue-intense: 0 0 60px hsl(210 100% 50% / 0.6);
+    --glow-subtle: 0 0 20px hsl(210 100% 50% / 0.2);
+
+    --glass-bg: hsl(0 0% 95% / 0.6);
+    --glass-border: hsl(210 100% 50% / 0.2);
+
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -69,7 +69,7 @@
   body {
     @apply bg-background text-foreground font-sans antialiased;
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(180deg, hsl(260 60% 3%) 0%, hsl(260 50% 4%) 100%);
+    background: linear-gradient(180deg, hsl(210 100% 98%) 0%, hsl(210 100% 95%) 100%);
   }
 }
 
@@ -81,8 +81,8 @@
   }
 
   .glow-border {
-    box-shadow: inset 0 0 0 1px hsl(262 83% 58% / 0.3),
-                0 0 30px hsl(262 83% 58% / 0.15);
+    box-shadow: inset 0 0 0 1px hsl(210 100% 50% / 0.3),
+                0 0 30px hsl(210 100% 50% / 0.15);
   }
 
   .gradient-text {
@@ -133,8 +133,8 @@
 
   .role-card:hover {
     transform: translateY(-4px);
-    border-color: hsl(262 83% 58% / 0.4);
-    box-shadow: var(--glow-purple);
+    border-color: hsl(210 100% 50% / 0.4);
+    box-shadow: var(--glow-blue);
   }
 
   .input-field {
