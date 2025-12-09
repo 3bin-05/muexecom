@@ -1,6 +1,5 @@
 import React from "react";
-
-// ✅ Custom Discord Logo (no lucide issues)
+import dis from "/public/dis.jpg";
 const DiscordLogo = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     {...props}
@@ -13,7 +12,7 @@ const DiscordLogo = (props: React.SVGProps<SVGSVGElement>) => (
 );
 
 const DISCORD_URL = "https://discord.gg/RzmuY3FaWe"; // ⚠️ Update your Discord link
-const heroImg = "/public/dis.jpg"; // ⚠️ Update image path
+const heroImg = dis; // ⚠️ Update image path
 
 const JoinCard = () => {
   return (
