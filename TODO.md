@@ -1,2 +1,1 @@
-- [x] Change background color of cards in AboutSection from grey to white by adding 'bg-white' class
-- [x] Change background color of email and phone cards in ContactSection from grey to white by adding 'bg-white' class
+- [ ] Add bg.png as background image to HeroSection component in src/components/HeroSection.tsx

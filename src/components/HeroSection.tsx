@@ -1,5 +1,4 @@
 import { ChevronDown } from "lucide-react";
-import HeroCarousel from "./HeroCarousel";
 import CountdownTimer from "./CountdownTimer";
 
 const HeroSection = () => {
@@ -21,9 +20,14 @@ const HeroSection = () => {
     <section
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
+      style={{
+        backgroundImage: "url(/bg.png)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
     >
       {/* Background Elements */}
-      <div className="absolute inset-0 bg-gradient-hero" />
 
       {/* Floating Orbs */}
       <div className="orb w-96 h-96 -top-48 -left-48" />
@@ -95,12 +99,6 @@ const HeroSection = () => {
           </div>
 
           {/* Right Column - Carousel */}
-          <div
-            className="animate-fade-up lg:animate-slide-in"
-            style={{ animationDelay: "0.5s" }}
-          >
-            <HeroCarousel />
-          </div>
         </div>
       </div>
 

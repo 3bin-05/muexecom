@@ -14,7 +14,7 @@ const muvImg = "/Muv.png";
 const roles = [
   {
     title: "CO-Lead",
-    description: "Lead the executive committee and drive vision forward.",
+    description: "Supports the Lead by ensuring strategic alignment and cross-team coordination. ",
     image: coleadImg,
     tags: [
       "Leadership",
@@ -56,7 +56,7 @@ const roles = [
   },
   {
     title: "Content Lead & Content Team",
-    description: "Spearhead technical projects and drive innovation.",
+    description: "Crafting the voice of our community.",
     image: contentImg,
     tags: [
       "Writing",
@@ -138,7 +138,7 @@ const roles = [
   },
   {
     title: "Design Lead & Design Team",
-    description: "Plan memorable events that unite the community.",
+    description: "Shaping the community's visual identity.",
     image: designImg,
     tags: [
       "Basic Design Knowledge (poster/Graphic)",
@@ -175,7 +175,7 @@ const roles = [
   },
   {
     title: "HR-Manager",
-    description: "Craft compelling narratives across platforms.",
+    description: "Ensuring team harmony through supportive communication.",
     image: hrImg,
     tags: ["Content", "Writing", "Strategy"],
     fullDescription: (
@@ -216,7 +216,7 @@ const roles = [
   },
   {
     title: "Technical Lead & Technical Team",
-    description: "Build partnerships and expand our influence.",
+    description: "Manages technical systems, tools, and digital platforms.",
     image: techImg,
     tags: [
       "Basic Tech Knowledge (Discord,  platforms) ",
@@ -254,7 +254,7 @@ const roles = [
   },
   {
     title: "Marketing Lead & Marketing Team",
-    description: "Build partnerships and expand our influence.",
+    description: "Manages visibility, branding and community engagement.",
     image: marketImg,
     tags: ["Communication", "Networking", "Creativity", "Social Media Basics"],
     fullDescription: (
@@ -307,7 +307,7 @@ const roles = [
   },
   {
     title: "Operations Lead & Operations Team",
-    description: "Build partnerships and expand our influence.",
+    description: "Ensures smooth execution and efficient coordination.",
     image: opImg,
     tags: [
       "Management Skills",
