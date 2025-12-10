@@ -20,13 +20,15 @@ const HeroSection = () => {
     <section
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
-      style={{
-        backgroundImage: "url(/bg.png)",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
     >
+      <video
+        className="absolute inset-0 w-full h-full object-cover z-0"
+        autoPlay
+        muted
+        loop
+      >
+        <source src="/vidbg.mp4" type="video/mp4" />
+      </video>
       {/* Background Elements */}
 
       {/* Floating Orbs */}
