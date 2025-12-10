@@ -14,7 +14,8 @@ const muvImg = "/Muv.png";
 const roles = [
   {
     title: "CO-Lead",
-    description: "Supports the Lead by ensuring strategic alignment and cross-team coordination. ",
+    description:
+      "Supports the Lead by ensuring strategic alignment and cross-team coordination. ",
     image: coleadImg,
     tags: [
       "Leadership",
@@ -254,7 +255,7 @@ const roles = [
   },
   {
     title: "Marketing Lead & Marketing Team",
-    description: "Manages visibility, branding and community engagement.",
+    description: "creating movies, memories, and magic.",
     image: marketImg,
     tags: ["Communication", "Networking", "Creativity", "Social Media Basics"],
     fullDescription: (
@@ -288,21 +289,50 @@ const roles = [
     title: "Muv Lead & Muv Team",
     description: "Build partnerships and expand our influence.",
     image: muvImg,
-    tags: ["PR", "Networking", "Partnerships"],
-    fullDescription:
-      "As PR & Outreach lead, you'll be the bridge between our organization and the external world. You'll build strategic partnerships, manage media relations, and expand our influence within the industry.",
+    tags: [
+      "Direction",
+      "Management Skills",
+      "Strategic Thinking",
+    ],
+    fullDescription: (
+      <p>
+        The Muv Team is the Movies Interest Group (IG) within µLearn, dedicated
+        to the entire process of filmmaking, from ideation to final production.
+        This team is where students with a passion for cinema collaborate to
+        produce short films, creative videos, and media content, handling all
+        aspects of filmmaking. <br /> ROLES YOU CAN TAKE UP
+        <br />
+        Director: The visionary who brings the script to life, guiding every
+        creative choice.
+        <br />
+        Scriptwriter: Creates engaging scripts, dialogue and screenplays. <br />
+        Videographer: Manages camera work, framing scenes to match the
+        director’s vision. <br />
+        Video Editor: Edits raw footage into a polished, engaging final product.{" "}
+        <br />
+        Photographer: Captures photos for documentation, behind-the-scenes, and
+        storytelling. <br />
+        Actors: Bring characters to life, conveying emotion and narrative on
+        screen. <br />
+        Or any other department you’d love to work on.
+        <br />
+      </p>
+    ),
+
     responsibilities: [
-      "Develop and maintain relationships with partners and sponsors",
-      "Manage media relations and press communications",
-      "Identify and pursue new partnership opportunities",
-      "Coordinate outreach campaigns and initiatives",
-      "Represent the organization at networking events",
-      "Track and report on partnership outcomes",
+      "Partnership Building",
+      "Event Collaboration",
+      "Networking with External Entities",
+      "Brand Representation",
+      "Opportunity Sourcing",
+      "Relationship Management",
+      "Performance Analysis",
+      
     ],
     benefits: [
-      "Build an extensive professional network",
-      "Develop negotiation and communication skills",
-      "Open doors to future career opportunities",
+      " Skills Development",
+      "Networking Opportunities",
+      "Real-world Experience",    
     ],
   },
   {

@@ -1,7 +1,9 @@
 import { ChevronDown } from "lucide-react";
 import CountdownTimer from "./CountdownTimer";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const HeroSection = () => {
+  const isMobile = useIsMobile();
   const scrollToPositions = () => {
     const element = document.querySelector("#positions");
     if (element) {
@@ -20,15 +22,18 @@ const HeroSection = () => {
     <section
       id="home"
       className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20"
+      style={isMobile ? { background: 'var(--gradient-hero)' } : {}}
     >
-      <video
-        className="absolute inset-0 w-full h-full object-cover z-0"
-        autoPlay
-        muted
-        loop
-      >
-        <source src="/vidbg.mp4" type="video/mp4" />
-      </video>
+      {!isMobile && (
+        <video
+          className="absolute inset-0 w-full h-full object-cover z-0"
+          autoPlay
+          muted
+          loop
+        >
+          <source src="/vidbg.mp4" type="video/mp4" />
+        </video>
+      )}
       {/* Background Elements */}
 
       {/* Floating Orbs */}
