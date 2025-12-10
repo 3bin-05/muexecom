@@ -16,6 +16,10 @@ interface RoleModalProps {
   onClose: () => void;
 }
 
+const handleClick = () => {
+  window.open("https://makemypass.com/event/execom-call-26", "_blank");
+};
+
 const RoleModal = ({ role, isOpen, onClose }: RoleModalProps) => {
   useEffect(() => {
     if (isOpen) {
@@ -127,7 +131,7 @@ const RoleModal = ({ role, isOpen, onClose }: RoleModalProps) => {
 
         {/* CTA Button */}
         <button
-          onClick={scrollToContact}
+          onClick={handleClick}
           className="btn-primary w-full text-lg py-4"
         >
           Join Us

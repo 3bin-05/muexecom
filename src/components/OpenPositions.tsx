@@ -30,8 +30,8 @@ const roles = [
         ensuring smooth coordination across all teams. You help with planning,
         decision-making, and monitoring progress so that all initiatives move
         forward effectively. Your role ensures stability, clarity, and strategic
-        alignment within the community. <br />
-        Key Responsibilities <br />
+        alignment within the community. <br /><br />
+        <strong>Key Responsibilities</strong> <br />
         Assist in planning strategies, events, and major initiatives. <br />
         Coordinate between teams to maintain alignment. <br />
         Monitor workflow progress and support timely execution. <br />
@@ -71,11 +71,11 @@ const roles = [
     ],
     fullDescription: (
       <p>
-        Content Lead <br />
+        <strong>Content Lead</strong> <br />
         The Content Lead defines the voice, tone, and style of µLearn SBC. You
         make sure communication is simple, engaging, and memorable. You turn
-        information into stories that people want to read. <br />
-        Content Team <br />
+        information into stories that people want to read. <br /><br />
+        <strong>Content Team</strong> <br />
         The Content Team crafts the voice of the community. It focuses on
         writing clear, engaging, and relevant content for various platforms and
         initiatives.
@@ -110,12 +110,12 @@ const roles = [
     ],
     fullDescription: (
       <p>
-        Creative Lead <br />
+        <strong>Creative Lead</strong> <br />
         The Creative Lead is the spark behind every concept. You bring
         imagination into campaigns, events, and visuals - giving µLearn SBC its
         unique personality. From brainstorming wild ideas to refining creative
-        strategies, you bring innovation everywhere. <br />
-        Creative Team <br />
+        strategies, you bring innovation everywhere. <br /><br />
+        <strong>Creative Team</strong> <br />
         The hands-on innovators. You work on creative concepts, designs,
         experiences, and interactive elements that make µLearn SBC stand out on
         campus.
@@ -150,11 +150,11 @@ const roles = [
     ],
     fullDescription: (
       <p>
-        Design Lead <br /> The Design Lead shapes the entire visual identity of
+        <strong>Design Lead</strong> <br /> The Design Lead shapes the entire visual identity of
         µLearn SBC. You define how the community looks, feels, and communicates
         visually - from posters to branding to event themes. Your direction
-        makes µLearn instantly recognizable. <br />
-        Design Team <br />
+        makes µLearn instantly recognizable. <br /><br />
+        <strong>Design Team</strong> <br />
         The Design Team shapes the visual identity of the community. From
         posters to digital creatives, this team ensures that every visual is
         clear, attractive, and aligned with the brand.
@@ -186,8 +186,8 @@ const roles = [
         members feel supported, communication remains smooth, and the team
         operates harmoniously. Your role includes welcoming new members,
         monitoring engagement, and addressing any concerns with professionalism
-        and discretion. <br />
-        Key Responsibilities
+        and discretion. <br /><br />
+        <strong>Key Responsibilities</strong>
         <br />
         Oversee member onboarding and orientation. <br />
         Maintain clear and consistent communication across teams. <br />
@@ -228,12 +228,12 @@ const roles = [
     ],
     fullDescription: (
       <p>
-        Technical Lead <br /> The Technical Lead is the tech backbone of µLearn
+        <strong>Technical Lead</strong> <br /> The Technical Lead is the tech backbone of µLearn
         SBC. You handle technical workflows, tools, automation, and platforms -
         ensuring everything runs smarter and more efficiently. From Discord
         setups to automation tools, you keep things digital and smooth.
-        <br />
-        Technical Team <br />
+        <br /><br />
+        <strong>Technical Team</strong> <br />
         The Technical Team supports all technology-related needs of the
         community. It ensures that platforms, tools, and digital systems run
         smoothly and are properly maintained.
@@ -260,12 +260,12 @@ const roles = [
     tags: ["Communication", "Networking", "Creativity", "Social Media Basics"],
     fullDescription: (
       <p>
-        Marketing Lead <br /> The Marketing Lead is the voice, face, and vibe of
+        <strong>Marketing Lead</strong> <br /> The Marketing Lead is the voice, face, and vibe of
         µLearn SBC. You lead branding, visibility, campaigns, and community
         growth - making sure people know, talk about, and engage with the
         community. You build a presence that pulls students in effortlessly.{" "}
-        <br />
-        Marketing & Outreach Team <br />
+        <br /><br />
+        <strong>Marketing & Outreach Team</strong> <br />
         The Marketing Team manages the visibility and reach of the community. It
         is responsible for promoting events, engaging students, and maintaining
         an active presence across communication channels.
@@ -300,7 +300,7 @@ const roles = [
         to the entire process of filmmaking, from ideation to final production.
         This team is where students with a passion for cinema collaborate to
         produce short films, creative videos, and media content, handling all
-        aspects of filmmaking. <br /> ROLES YOU CAN TAKE UP
+        aspects of filmmaking. <br /><br /> <strong>ROLES YOU CAN TAKE UP</strong>
         <br />
         Director: The visionary who brings the script to life, guiding every
         creative choice.
@@ -313,8 +313,7 @@ const roles = [
         Photographer: Captures photos for documentation, behind-the-scenes, and
         storytelling. <br />
         Actors: Bring characters to life, conveying emotion and narrative on
-        screen. <br />
-        Or any other department you’d love to work on.
+        screen or any other department you’d love to work on.
         <br />
       </p>
     ),
@@ -349,13 +348,13 @@ const roles = [
     ],
     fullDescription: (
       <p>
-        Operations Lead <br /> The Operations Lead is the backbone of µLearn
+        <strong>Operations Lead</strong> <br /> The Operations Lead is the backbone of µLearn
         SBC. You’re the one who makes sure ideas don’t just stay as ideas - they
         turn into reality. From planning timelines to coordinating people and
         making events run without chaos, you ensure everything moves like a
         well-oiled machine. Smooth execution is your signature.
-        <br />
-        Operations Team <br />
+        <br /><br />
+        <strong>Operations Team</strong> <br />
         The Operations Team ensures that every plan is executed efficiently and
         every event runs smoothly. This team focuses on coordination, on-ground
         management, and maintaining order during activities and initiatives.

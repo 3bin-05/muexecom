@@ -1,5 +1,6 @@
 import React from "react";
-import dis from "/public/dis.jpg";
+
+// ✅ Custom Discord Logo (no lucide issues)
 const DiscordLogo = (props: React.SVGProps<SVGSVGElement>) => (
   <svg
     {...props}
@@ -11,14 +12,30 @@ const DiscordLogo = (props: React.SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
-const DISCORD_URL = "https://discord.gg/RzmuY3FaWe"; // ⚠️ Update your Discord link
-const heroImg = dis; // ⚠️ Update image path
+// ✅ Official WhatsApp logo (speech bubble with phone)
+const WhatsAppLogo = (props: React.SVGProps<SVGSVGElement>) => (
+  <svg
+    {...props}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M20.52 3.48A11.85 11.85 0 0012.01.5C6.13.5 1.5 5.13 1.5 11c0 1.95.53 3.86 1.54 5.57L.5 23.5l6.17-1.62A11.45 11.45 0 0012 22.5c5.88 0 10.51-4.63 10.51-10.5 0-2.8-1.08-5.42-3.99-8.52zM12.01 20.5c-1.1 0-2.18-.28-3.12-.8l-.22-.12-3.66.96.98-3.57-.14-.24A8.87 8.87 0 013.13 11c0-4.95 4.02-8.99 8.88-8.99 2.37 0 4.6.92 6.28 2.6 1.69 1.69 2.62 3.96 2.62 6.39 0 4.96-4.02 8.99-8.88 8.99z" />
+    <path d="M17.3 14.1c-.26-.13-1.53-.76-1.77-.84-.24-.08-.42-.13-.6.13-.18.26-.69.84-.85 1.01-.16.18-.32.2-.58.07-.26-.13-1.09-.4-2.07-1.28-.77-.69-1.28-1.55-1.42-1.81-.14-.26-.02-.4.11-.53.12-.12.26-.32.39-.48.13-.16.17-.26.26-.43.09-.18.04-.33-.02-.46-.06-.13-.6-1.44-.82-1.97-.22-.52-.45-.45-.62-.46-.16-.01-.34-.01-.52-.01-.18 0-.46.07-.7.33-.24.26-.92.9-.92 2.2 0 1.3.94 2.56 1.07 2.73.13.17 1.86 2.84 4.51 3.88 3.14 1.26 3.14.84 3.71.79.57-.05 1.86-.74 2.12-1.46.26-.72.26-1.34.18-1.46-.07-.13-.24-.18-.5-.31z" />
+  </svg>
+);
+
+
+const DISCORD_URL = "https://discord.gg/3EAuzhfy7V"; // ⚠️ Update your Discord link
+const WHATSAPP_URL = "https://whatsapp.com/channel/0029VbBv02ECsU9LjmgbJh0Q"; // ⚠️ Update your WhatsApp invite link
+const heroImg = "/dis.jpg"; // ⚠️ Update image path if needed
 
 const JoinCard = () => {
   return (
-    <aside className="w-full max-w-md bg-white rounded-2xl border-2 border-blue-200 shadow-lg p-6 
-                      flex flex-col items-center text-center">
-      
+    <aside
+      className="w-full max-w-md bg-white rounded-2xl border-2 border-blue-200 shadow-lg p-6 
+                      flex flex-col items-center text-center"
+    >
       {/* Accent bar */}
       <div className="w-full h-1 rounded-full mb-4 bg-gradient-to-r from-blue-400 via-blue-600 to-indigo-500" />
 
@@ -30,17 +47,35 @@ const JoinCard = () => {
         Join our campus community so you don’t miss out on updates and events.
       </p>
 
-      {/* Discord Button */}
-      <a
-        href={DISCORD_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-blue-600 text-white font-medium 
-                   shadow hover:bg-blue-700 transition-all"
-      >
-        <DiscordLogo className="w-5 h-5" />
-        Join Discord
-      </a>
+      {/* Buttons row: Discord + WhatsApp */}
+      <div className="flex items-center gap-3">
+        <a
+          href={DISCORD_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-blue-600 text-white font-medium 
+                   shadow hover:bg-blue-700 transition-all min-w-[130px] justify-center"
+          aria-label="Join Discord"
+        >
+          <DiscordLogo className="w-5 h-5" />
+          <span className="text-sm">Discord</span>
+        </a>
+
+        <a
+          href={WHATSAPP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 px-4 py-2.5 rounded-lg bg-white text-slate-800 font-medium 
+                     border border-green-200 shadow-sm hover:shadow-md hover:scale-[1.01] transition-all min-w-[130px] justify-center"
+          aria-label="Join WhatsApp"
+        >
+          {/* WhatsApp button uses green icon and a subtle modern outline to keep it elegant */}
+          <div className="w-5 h-5 text-green-600">
+            <WhatsAppLogo className="w-5 h-5" />
+          </div>
+          <span className="text-sm">WhatsApp</span>
+        </a>
+      </div>
 
       {/* Image */}
       <div className="w-full flex justify-center mt-6">
