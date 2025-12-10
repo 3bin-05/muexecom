@@ -37,9 +37,13 @@ const HeroSection = () => {
       {/* Background Elements */}
 
       {/* Floating Orbs */}
-      <div className="orb w-96 h-96 -top-48 -left-48" />
-      <div className="orb orb-accent w-80 h-80 top-1/4 -right-40" />
-      <div className="orb w-64 h-64 bottom-20 left-1/4 opacity-20" />
+      {isMobile && (
+        <>
+          <div className="orb w-96 h-96 -top-48 -left-48" />
+          <div className="orb orb-accent w-80 h-80 top-1/4 -right-40" />
+          <div className="orb w-64 h-64 bottom-20 left-1/4 opacity-20" />
+        </>
+      )}
 
       {/* Grid Pattern Overlay */}
       <div
