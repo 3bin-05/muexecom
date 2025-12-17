@@ -60,7 +60,7 @@ const roles = [
   {
     title: "IG-Group",
     description:
-      "Supports the Lead by ensuring strategic alignment and cross-team coordination. ",
+      "The IG Lead oversees group activities, organizes sessions, and communicates updates to ensure effective student engagement and participation. ",
     image: igImg,
     tags: [
       "Communication",
@@ -71,18 +71,77 @@ const roles = [
     ],
     fullDescription: (
       <p>
-        The Co-Lead supports the Lead in guiding µLearn SBC’s direction and
-        ensuring smooth coordination across all teams. You help with planning,
-        decision-making, and monitoring progress so that all initiatives move
-        forward effectively. Your role ensures stability, clarity, and strategic
-        alignment within the community. <br />
+        <strong>WHAT WHAT IS INTEREST GROUPS(IGs)? </strong>
         <br />
-        <strong>Key Responsibilities</strong> <br />
-        Assist in planning strategies, events, and major initiatives. <br />
-        Coordinate between teams to maintain alignment. <br />
-        Monitor workflow progress and support timely execution. <br />
-        Identify challenges early and help implement solutions. <br />
-        Provide structured guidance and support to team leads. <br />
+        Interest Groups (IGs) are student learning circles where members can
+        explore their interests, take up tasks, and build practical skills in
+        their chosen area. These groups encourage hands-on learning, peer
+        collaboration, and skill development, helping students gain real-world
+        experience while learning together.
+        <br />
+        <strong>Our IG's</strong><br />
+        AI
+        <br />
+        Ar Vr Mr
+        <br />
+        Beckn
+        <br />
+        Blockchain
+        <br />
+        Civil
+        <br />
+        Comics
+        <br />
+        Creative Design
+        <br />
+        Cyber Security
+        <br />
+        Data Analytics
+        <br />
+        Data Science
+        <br />
+        Data Structures and Algorithm
+        <br />
+        DevOps
+        <br />
+        Digital Marketing
+        <br />
+        Entrepreneurship
+        <br />
+        Game Dev
+        <br />
+        Generative AI
+        <br />
+        Human Resources
+        <br />
+        Internet Of Things (IOT) And Robotics
+        <br />
+        Mobile Development
+        <br />
+        MuV
+        <br />
+        No Or Low Code
+        <br />
+        Product Management
+        <br />
+        Project Management
+        <br />
+        Quality Assurance
+        <br />
+        Quantum Computing
+        <br />
+        Space
+        <br />
+        Strategic Leadership
+        <br />
+        Ui Ux
+        <br />
+        Web Development
+        <br />
+        <strong>IG LEADS</strong> <br />
+        The IG Lead oversees group activities, organizes sessions, and
+        communicates updates to ensure effective student engagement and
+        participation.
       </p>
     ),
 
