@@ -71,7 +71,7 @@ const roles = [
     ],
     fullDescription: (
       <p>
-        <strong>WHAT WHAT IS INTEREST GROUPS(IGs)? </strong>
+        <strong>WHAT IS INTEREST GROUPS(IGs)? </strong>
         <br />
         Interest Groups (IGs) are student learning circles where members can
         explore their interests, take up tasks, and build practical skills in
@@ -468,17 +468,17 @@ const roles = [
         aspects of filmmaking. <br />
         <br /> <strong>ROLES YOU CAN TAKE UP</strong>
         <br />
-        Director: The visionary who brings the script to life, guiding every
+        <strong>Director:</strong> The visionary who brings the script to life, guiding every
         creative choice.
         <br />
-        Scriptwriter: Creates engaging scripts, dialogue and screenplays. <br />
-        Videographer: Manages camera work, framing scenes to match the
+        <strong>Scriptwriter:</strong> Creates engaging scripts, dialogue and screenplays. <br />
+        <strong>Videographer:</strong> Manages camera work, framing scenes to match the
         director’s vision. <br />
-        Video Editor: Edits raw footage into a polished, engaging final product.{" "}
+        <strong>Video Editor:</strong> Edits raw footage into a polished, engaging final product.{" "}
         <br />
-        Photographer: Captures photos for documentation, behind-the-scenes, and
+        <strong>Photographer:</strong> Captures photos for documentation, behind-the-scenes, and
         storytelling. <br />
-        Actors: Bring characters to life, conveying emotion and narrative on
+        <strong>Actors:</strong> Bring characters to life, conveying emotion and narrative on
         screen or any other department you’d love to work on.
         <br />
       </p>
