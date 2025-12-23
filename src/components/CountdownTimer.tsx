@@ -8,7 +8,7 @@ interface TimeLeft {
 }
 
 // Set deadline to January 31, 2025
-const deadline = new Date("2025-12-31T23:59:59").getTime();
+const deadline = new Date("2026-01-20T23:59:59").getTime();
 
 const calculateTimeLeft = (): TimeLeft => {
   const now = new Date().getTime();
